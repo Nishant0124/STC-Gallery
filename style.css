@@ -61,7 +61,7 @@ nav a {
 
 .section {
     border: 5px dotted #4B2E83;
-    padding: 40px 20px  20px 40px; /* extra top padding for circle */
+    padding: 40px 20px  20px 40px;
     background: #fff;
     position: relative;
     display: grid;
@@ -70,11 +70,36 @@ nav a {
 }
 
 .item img {
+      width: 400px;
+      height: auto;
+      background: #888;
+      border-radius: 6px;
+      display: block;
+}
+
+.main_view {
     width: 100%;
+    height: 100%;
+}
+
+.main_view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side_view {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.side_view img {
+    width: 150px;
     height: auto;
-    background: #888; /* Placeholder grey */
-    border-radius: 6px;
-    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0.5rem;
 }
 
 .description {
@@ -85,8 +110,9 @@ nav a {
     border-radius: 50%;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: bold;
     position: absolute;
     top: 0px; 
